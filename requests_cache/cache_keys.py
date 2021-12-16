@@ -56,7 +56,7 @@ def create_key(
         request.method or '',
         request.url,
         request.body or '',
-        request_kwargs.get('verify', True),
+        True,
         *get_matched_headers(request.headers, match_headers),
     ]
 
